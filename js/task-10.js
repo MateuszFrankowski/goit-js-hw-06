@@ -12,7 +12,7 @@ const fCreate = (event) => {
   const divArray = [];
   let divDim = 30;
   const inputLength = parseInt(input.value);
-  console.log("first hello");
+
   for (let i = 0; i < inputLength; i++) {
     const div = document.createElement("div");
     div.style.height = divDim + "px";
