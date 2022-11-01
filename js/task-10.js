@@ -9,6 +9,15 @@ const destroy = document.querySelector(`button[data-destroy]`);
 const divFather = document.querySelector("div#boxes");
 
 const fCreate = (event) => {
+  if (
+    input.value > parseInt(input.getAttribute(`max`)) ||
+    input.value < parseInt(input.getAttribute(`min`))
+  ) {
+    input.value = "";
+    return alert(
+      "The entered value is out of range, enter a value in the range 1-100"
+    );
+  }
   const divArray = [];
   let divDim = 30;
   const inputLength = parseInt(input.value);

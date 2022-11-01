@@ -21,20 +21,4 @@ const markup = images
   .join("");
 
 gallery.insertAdjacentHTML("afterbegin", markup);
-gallery.style.display = "flex";
-gallery.style.flexDirection = "column";
-gallery.style.gap = "5px";
-gallery.style.justifyContent = "center";
-gallery.style.listStyleType = "none";
 
-const item = document.querySelectorAll(".gallery-item");
-item.forEach((item) => {
-  item.style.display = "flex";
-  item.style.justifyContent = "center";
-});
-const img = document.querySelectorAll("img");
-img.forEach((img) => {
-  img.style.maxWidth = "80%";
-  img.style.display = "block";
-  img.style.justifyContent = "center";
-});
